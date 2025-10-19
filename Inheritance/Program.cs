@@ -6,34 +6,53 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            // Bird object
+            Bird eagle = new Bird()
+            {
+                Name = "Golden Eagle",
+                Age = 5,
+                Habitat = "Mountains",
+                IsDomestic = false,
+                CanFly = true,
+                WingSpan = 7.5,
+                BeakType = "Hooked",
+                FeatherColor = "Brown and Gold"
+            };
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            Console.WriteLine("=== Bird Info ===");
+            Console.WriteLine($"Name: {eagle.Name}");
+            Console.WriteLine($"Age: {eagle.Age}");
+            Console.WriteLine($"Habitat: {eagle.Habitat}");
+            Console.WriteLine($"Domestic? {eagle.IsDomestic}");
+            Console.WriteLine($"Can Fly? {eagle.CanFly}");
+            Console.WriteLine($"Wingspan: {eagle.WingSpan} ft");
+            Console.WriteLine($"Beak Type: {eagle.BeakType}");
+            Console.WriteLine($"Feather Color: {eagle.FeatherColor}");
+            Console.WriteLine();
 
+            // Reptile object
+            Reptile snake = new Reptile()
+            {
+                Name = "King Cobra",
+                Age = 3,
+                Habitat = "Rainforest",
+                IsDomestic = false,
+                HasScales = true,
+                SkinColor = "Olive Brown",
+                IsVenomous = true,
+                PreferredTemperature = "Warm and Humid"
+            };
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            Console.WriteLine("=== Reptile Info ===");
+            Console.WriteLine($"Name: {snake.Name}");
+            Console.WriteLine($"Age: {snake.Age}");
+            Console.WriteLine($"Habitat: {snake.Habitat}");
+            Console.WriteLine($"Domestic? {snake.IsDomestic}");
+            Console.WriteLine($"Has Scales? {snake.HasScales}");
+            Console.WriteLine($"Skin Color: {snake.SkinColor}");
+            Console.WriteLine($"Venomous? {snake.IsVenomous}");
+            Console.WriteLine($"Preferred Temperature: {snake.PreferredTemperature}");
         }
     }
 }
+
